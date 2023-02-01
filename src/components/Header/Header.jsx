@@ -1,10 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from "../../assets/logo.svg";
 
 const Header = () => {
     return (
-        <div className='header'>
-            Header here
-        </div>
+        <header className='header'>
+            <img src={logo} alt="logo de Kasa" className='header_logo' />
+            <nav className='header_nav'>
+                <ul>
+                    <li><Link to="/">Accueil</Link></li>
+                    <li><Link to="/about">A propos</Link></li>
+                </ul>
+            </nav>
+        </header>
     );
 };
 
