@@ -1,0 +1,16 @@
+.footer {
+    height: 150px;
+    background: $bg-clr-footer;
+    color: $secondary-clr;
+    @include flex-col;
+    justify-content: space-between;
+
+    &_logo {
+        width: 120px;
+        margin: auto;
+    }
+
+    p {
+        margin: auto;
+    }
+}
