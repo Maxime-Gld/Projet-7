@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FicheLogements = () => {
+const Housing = () => {
     return (
-        <div className='ficheLogement'>
+        <div className='housing'>
             FicheLogement Works !
         </div>
     );
 };
 
-export default FicheLogements;
+export default Housing;
