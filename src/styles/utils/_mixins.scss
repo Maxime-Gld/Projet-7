@@ -1,0 +1,12 @@
+/* display */
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* size */
+
+@mixin bloc-page {
+    padding: 0 100px;
+}
