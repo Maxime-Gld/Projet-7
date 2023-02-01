@@ -10,13 +10,15 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/ficheLogement/:id' element={<FicheLogements/>}/>
-        <Route path='/about' element={<About/>}/>
-        
-        <Route path='*' element={<Error/>}/>
-      </Routes>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/ficheLogement/:id' element={<FicheLogements/>}/>
+          <Route path='/about' element={<About/>}/>
+          
+          <Route path='*' element={<Error/>}/>
+        </Routes>
+      </main>
       <Footer />
      
     </BrowserRouter>
