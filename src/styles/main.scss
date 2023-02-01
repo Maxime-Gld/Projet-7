@@ -1,6 +1,7 @@
 @import "./utils/variable";
 @import "./utils/mixins";
 
+@import "./base/normalize";
 @import "./base/base";
 
 @import "../components/Header/header";
