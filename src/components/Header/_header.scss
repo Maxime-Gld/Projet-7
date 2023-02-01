@@ -1,4 +1,25 @@
 .header {
-    display: flex
-    flex-direction: row
+    @include bloc-page;
+    margin-top: 40px;
+    color: $primary-clr;
+    display: flex;
+    justify-content: space-between;
+
+    &_logo {
+        width: 210px;
+        height: 68px;
+    }
+
+    &_nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    &_nav li {
+        margin-left: 50px;
+        :hover {
+            text-decoration-line: underline;
+        }
+    }
 }
