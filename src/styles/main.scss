@@ -4,5 +4,10 @@
 @import "./base/normalize";
 @import "./base/base";
 
+
+/* layout */
 @import "../components/Header/header";
 @import "../components/Footer/footer";
+
+/* pages */
+@import "../pages/Error/error"
