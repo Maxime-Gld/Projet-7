@@ -1,0 +1,24 @@
+.error-container {
+    @include flex-col;
+    @include bloc-page;
+    color: $primary-clr;
+
+    &_title {
+        margin: auto;
+        font-size: 200px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        margin: auto;
+        margin-bottom: 120px;
+        font-size: 36px;
+    }
+
+    a {
+        margin: auto;
+        text-decoration: underline;
+        margin-bottom: 30px;
+    }
+}
