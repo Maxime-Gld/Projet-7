@@ -5,8 +5,19 @@
     box-sizing: border-box;
 }
 
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    @include flex-col;
+}
+
+main {
+    flex-grow: 1;
+}
+
 a {
     text-decoration: none;
-    display: flex;
     color: inherit;
 }
