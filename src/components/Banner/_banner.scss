@@ -6,7 +6,7 @@
     & img {
         position: absolute;
         filter: brightness(50%);
-        @include big-ridius;
+        @include big-radius;
     }
     
     & h1{
