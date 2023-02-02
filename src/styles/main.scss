@@ -9,5 +9,12 @@
 @import "../components/Layout/Header/header";
 @import "../components/Layout/Footer/footer";
 
-/* pages */
-@import "../pages/Error/error"
+/* components */
+
+
+/* pages error */
+@import "../pages/Error/error";
+
+
+/* page Home */
+@import "../components/Banner/banner";
