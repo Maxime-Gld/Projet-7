@@ -1,0 +1,18 @@
+.banner-container {
+    height: 223px;
+    width: auto;
+    @include flex-center;
+
+    & img {
+        position: absolute;
+        filter: brightness(50%);
+        @include big-ridius;
+    }
+    
+    & h1{
+        color: $secondary-clr;
+        font-weight: 500;
+        font-size: 48px;
+        z-index: 1;
+    }
+}
