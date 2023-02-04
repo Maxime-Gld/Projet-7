@@ -1,18 +1,21 @@
 .banner-container {
-    height: 223px;
+    height: 220px;
     width: auto;
+    overflow: hidden;
     @include flex-center;
+    @include big-radius;
 
     & img {
-        position: absolute;
+        position: relative;
         filter: brightness(50%);
         @include big-radius;
     }
     
     & h1{
+        position: absolute;
         color: $secondary-clr;
         font-weight: 500;
         font-size: 48px;
-        z-index: 1;
+        width: auto;
     }
 }
