@@ -26,3 +26,11 @@
 @mixin small-radius {
     border-radius: 10px;
 }
+
+/* text */
+
+@mixin secondary-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: $secondary-clr;
+}
