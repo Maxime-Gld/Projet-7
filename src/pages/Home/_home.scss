@@ -1,0 +1,10 @@
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: $bg-clr-container;
+    padding: 50px;
+    margin-top: 50px;
+    @include big-radius;
+}
