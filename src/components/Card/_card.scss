@@ -1,0 +1,35 @@
+.card {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    overflow: hidden;
+    @include small-radius;
+
+    & a {
+        @include flex-col;
+
+    }
+
+    & img {
+        
+        object-fit: cover;
+        width: 100%;
+        min-height: 340px;
+    }
+
+    & h2 {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        @include secondary-title;
+    }
+}
+
+
+/* animation */
+
+.card:hover {
+    transform: scale(1.02);
+    border: 1px solid black;
+    transition: transform 300ms;
+}
