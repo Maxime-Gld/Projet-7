@@ -12,7 +12,7 @@ const Home = () => {
     }, [])
 
     return (
-        <main className='home'>
+        <div className='home'>
             <Banner />
             <section className='cards-container'>
                 {dataHousing.map((housing) => (
@@ -24,7 +24,7 @@ const Home = () => {
                     />
                 ))}
             </section>
-        </main>
+        </div>
     );
 };
 
