@@ -3,13 +3,13 @@ import banner_img from "../../assets/Images/banner_kasa.jpg";
 import Banner from '../../components/Banner/Banner';
 import { useState, useEffect } from 'react';
 import Card from '../../components/Card/Card';
-import data from '../../datas/Housing.json';
+import Housings_data from '../../datas/Housing.json';
 
 const Home = () => {
     const [ dataHousing, setDataHousing ] = useState([])
 
     useEffect(() => {
-        setDataHousing(data)
+        setDataHousing(Housings_data)
     }, [])
 
     return (
