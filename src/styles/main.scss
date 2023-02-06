@@ -1,9 +1,11 @@
+/* utils */
 @import "./utils/variable";
 @import "./utils/mixins";
+@import "./utils/animation";
 
+/* base */
 @import "./base/normalize";
 @import "./base/base";
-
 
 /* layout */
 @import "../components/Layout/Header/header";
@@ -12,6 +14,7 @@
 /* components */
 @import "../components/Banner/banner";
 @import "../components/Card/card";
+@import "../components//DropDown/dropdown";
 
 /* pages error */
 @import "../pages/Error/error";
