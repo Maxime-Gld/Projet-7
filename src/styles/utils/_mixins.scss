@@ -29,8 +29,31 @@
 
 /* text */
 
-@mixin secondary-title{
+@mixin card-title {
     font-size: 18px;
     font-weight: 500;
     color: $secondary-clr;
+}
+
+@mixin dropdown-text-size {
+    font-size: 24px;
+    line-height: 142.6%;
+    margin-block: 0.3em;
+}
+
+/* Container appearance  */
+
+@mixin red-container {
+    background-color: $primary-clr;
+    color : $secondary-clr;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+@mixin grey-container {
+    background-color: $bg-clr-container;
+    color: $primary-clr;
+    padding: 25px 20px 5px 10px;
+    text-align: justify;
 }
