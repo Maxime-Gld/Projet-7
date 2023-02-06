@@ -1,0 +1,5 @@
+.about-container {
+    padding: 5% 10%;
+    @include flex-col;
+    gap: 30px;
+}
