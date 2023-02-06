@@ -1,0 +1,23 @@
+/* animation dropdown */
+    /* isOpen (false => true) */
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown__container {
+    animation: translate-to-bottom 600ms ease-out;
+}
+
+@keyframes translate-to-bottom {
+    0% {
+        transform: translateY(-50px);
+        margin-top: -120px;
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+        margin-top: -10px;
+        opacity: 100%;
+    }
+}
