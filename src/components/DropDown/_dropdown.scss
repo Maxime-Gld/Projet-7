@@ -1,0 +1,36 @@
+/* isOpen(true) */
+
+.dropdown {
+    width: auto;
+    @include flex-col;
+
+    &__btn {
+        @include small-radius;
+        @include red-container;
+        justify-content: space-between;
+
+        h2 {
+            font-weight: 500;
+            @include dropdown-text-size;
+        }
+    
+    }
+
+    &__container {
+        z-index: -1;
+        @include grey-container;
+        @include small-radius;
+        margin-top: -10px;
+
+        p {
+            font-weight: 400;
+            @include dropdown-text-size;
+        }
+    }
+}
+
+/* isOpen(false) */
+
+.dropdown__icon--revert {
+    transform: rotate(180deg);
+}
