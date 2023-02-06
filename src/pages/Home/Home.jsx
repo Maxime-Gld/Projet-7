@@ -1,4 +1,5 @@
 import React from 'react';
+import banner_img from "../../assets/Images/banner_kasa.jpg";
 import Banner from '../../components/Banner/Banner';
 import { useState, useEffect } from 'react';
 import Card from '../../components/Card/Card';
@@ -13,7 +14,10 @@ const Home = () => {
 
     return (
         <div className='home'>
-            <Banner />
+            <Banner 
+                picture={banner_img}
+                title={"Chez vous, partout et ailleurs"}
+            />
             <section className='cards-container'>
                 {dataHousing.map((housing) => (
                     <Card
