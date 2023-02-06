@@ -10,13 +10,14 @@
 @import "../components/Layout/Footer/footer";
 
 /* components */
-
+@import "../components/Banner/banner";
+@import "../components/Card/card";
 
 /* pages error */
 @import "../pages/Error/error";
 
-
 /* page Home */
 @import "../pages/Home/home";
-@import "../components/Banner/banner";
-@import "../components/Card/card";
+
+/* page about */
+@import "../pages/About/about";
