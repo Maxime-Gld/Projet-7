@@ -21,3 +21,14 @@
         opacity: 100%;
     }
 }
+
+/* animation dropdown icon */
+
+.dropdown__icon--revert {
+    transform: rotate(180deg);
+    transition: 500ms;
+}
+
+.dropdown__icon {
+    transition: 200ms;
+}
