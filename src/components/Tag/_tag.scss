@@ -1,0 +1,12 @@
+.tag {
+    width: 115px;
+    height: 25px;
+    @include small-radius;
+    background-color: $primary-clr;
+
+    &__text {
+        font-size: 14px;
+        font-weight: 500;
+        color: $secondary-clr;
+    }
+}
