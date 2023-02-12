@@ -1,26 +1,31 @@
 /* utils */
-@import "./utils/variable";
-@import "./utils/mixins";
-@import "./utils/animation";
+@import './utils/variable';
+@import './utils/mixins';
+@import './utils/animation';
 
 /* base */
-@import "./base/normalize";
-@import "./base/base";
+@import './base/normalize';
+@import './base/base';
 
 /* layout */
-@import "../components/Layout/Header/header";
-@import "../components/Layout/Footer/footer";
+@import '../components/Layout/Header/header';
+@import '../components/Layout/Footer/footer';
 
 /* components */
-@import "../components/Banner/banner";
-@import "../components/Card/card";
-@import "../components//DropDown/dropdown";
+@import '../components/Banner/banner';
+@import '../components/Card/card';
+@import '../components/DropDown/dropdown';
+@import '../components/Slideshow/slideshow';
+@import '../components/Profil/profil';
 
 /* pages error */
-@import "../pages/Error/error";
+@import '../pages/Error/error';
 
 /* page Home */
-@import "../pages/Home/home";
+@import '../pages/Home/home';
 
 /* page about */
-@import "../pages/About/about";
+@import '../pages/About/about';
+
+/* page Housing */
+@import '../pages/Housing/housing';
