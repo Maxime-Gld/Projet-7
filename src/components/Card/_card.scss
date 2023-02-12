@@ -4,10 +4,10 @@
     height: 340px;
     overflow: hidden;
     @include small-radius;
+    transition: 300ms;
 
     & a {
         @include flex-col;
-
     }
 
     & img {
@@ -29,7 +29,8 @@
 /* animation */
 
 .card:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
     border: 1px solid black;
-    transition: transform 300ms;
+    transition: 300ms;
+    cursor: pointer;
 }
