@@ -16,6 +16,9 @@
 @mixin bloc-page {
   margin: 30px auto;
   max-width: 1240px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 /* border radius */
