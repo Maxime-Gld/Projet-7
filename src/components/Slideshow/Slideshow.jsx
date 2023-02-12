@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import vector_icon from '../../assets/Images/vector_left.png';
+import Loader from '../Loader/Loader';
 
 const Slideshow = ({ datas }) => {
   // state pour chargement
@@ -21,8 +22,6 @@ const Slideshow = ({ datas }) => {
   // state pour gerer le carrousel
   const [current, setCurrent] = useState(0);
   const lenght = slides.length;
-  const index = slides.indexOf();
-  console.log(index);
 
   function nextSlide() {
     const isLastSlide = current === lenght - 1;
@@ -67,9 +66,9 @@ const Slideshow = ({ datas }) => {
       </div>
     </section>
   ) : (
-    <div>
-      <p>chargement...</p>
-    </div>
+    <section className="slider">
+      <Loader />
+    </section>
   );
 };
 
