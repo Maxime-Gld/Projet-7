@@ -1,59 +1,60 @@
 /* display */
 
 @mixin flex-col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* size */
 
 @mixin bloc-page {
-    margin: 30px 150px;
+  margin: 30px auto;
+  max-width: 1240px;
 }
 
 /* border radius */
 
 @mixin big-radius {
-    border-radius: 25px;
+  border-radius: 25px;
 }
 
 @mixin small-radius {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* text */
 
 @mixin card-title {
-    font-size: 18px;
-    font-weight: 500;
-    color: $secondary-clr;
+  font-size: 18px;
+  font-weight: 500;
+  color: $secondary-clr;
 }
 
 @mixin dropdown-text-size {
-    font-size: 24px;
-    line-height: 142.6%;
-    margin-block: 0.3em;
+  font-size: 24px;
+  line-height: 142.6%;
+  margin-block: 0.3em;
 }
 
 /* Container appearance  */
 
 @mixin red-container {
-    background-color: $primary-clr;
-    color : $secondary-clr;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
+  background-color: $primary-clr;
+  color: $secondary-clr;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 @mixin grey-container {
-    background-color: $bg-clr-container;
-    color: $primary-clr;
-    padding: 25px 20px 5px 10px;
-    text-align: justify;
+  background-color: $bg-clr-container;
+  color: $primary-clr;
+  padding: 25px 20px 5px 10px;
+  text-align: justify;
 }

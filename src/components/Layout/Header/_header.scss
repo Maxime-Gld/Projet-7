@@ -1,24 +1,26 @@
 .header {
-    @include bloc-page;
-    color: $primary-clr;
+  @include bloc-page;
+  color: $primary-clr;
+  display: flex;
+  justify-content: space-between;
+
+  &_logo {
+    width: 210px;
+    height: 68px;
+  }
+
+  &_nav ul {
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+  }
 
-    &_logo {
-        width: 210px;
-        height: 68px;
+  &_nav li {
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    :hover {
+      text-decoration-line: underline;
     }
-
-    &_nav ul {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-    }
-
-    &_nav li {
-        margin-left: 50px;
-        :hover {
-            text-decoration-line: underline;
-        }
-    }
+  }
 }

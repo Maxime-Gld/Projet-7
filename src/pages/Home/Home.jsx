@@ -1,35 +1,27 @@
-import React from 'react';
-import banner_img from "../../assets/Images/banner_kasa.jpg";
+import React, { useState, useEffect } from 'react';
+import banner_img from '../../assets/Images/banner_kasa.jpg';
 import Banner from '../../components/Banner/Banner';
-import { useState, useEffect } from 'react';
 import Card from '../../components/Card/Card';
-import Housings_data from '../../datas/Housing.json';
 
 const Home = () => {
-    const [ dataHousing, setDataHousing ] = useState([])
+  const [dataHousing, setDataHousing] = useState([]);
 
-    useEffect(() => {
-        setDataHousing(Housings_data)
-    }, [])
+  useEffect(() => {
+    fetch('/housing.json')
+      .then((res) => res.json())
+      .then((data) => setDataHousing(data));
+  }, []);
 
-    return (
-        <div className='home'>
-            <Banner 
-                picture={banner_img}
-                title={"Chez vous, partout et ailleurs"}
-            />
-            <section className='cards-container'>
-                {dataHousing.map((housing) => (
-                    <Card
-                        key={housing.id}
-                        id={housing.id}
-                        picture={housing.cover}
-                        title={housing.title}
-                    />
-                ))}
-            </section>
-        </div>
-    );
+  return (
+    <div className="home">
+      <Banner picture={banner_img} title={'Chez vous, partout et ailleurs'} />
+      <section className="cards-container">
+        {dataHousing.map((housing) => (
+          <Card key={housing.id} data={housing} />
+        ))}
+      </section>
+    </div>
+  );
 };
 
 export default Home;
