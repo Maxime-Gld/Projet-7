@@ -1,0 +1,46 @@
+.slider {
+  height: 415px;
+  width: auto;
+  margin: auto;
+  position: relative;
+  &__number {
+    position: absolute;
+    z-index: 1;
+    bottom: 2%;
+    right: 50%;
+    font-size: 26px;
+    color: $secondary-clr;
+    font-weight: 500;
+  }
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  @include big-radius;
+}
+
+.btn--arrow {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arrow {
+  position: absolute;
+  z-index: 1;
+
+  &--left {
+    top: 42%;
+    left: 2%;
+  }
+
+  &--right {
+    top: 42%;
+    right: 2%;
+    rotate: 180deg;
+  }
+}
