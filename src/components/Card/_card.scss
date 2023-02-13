@@ -1,36 +1,35 @@
 .card {
-    position: relative;
-    width: 340px;
-    height: 340px;
-    overflow: hidden;
-    @include small-radius;
-    transition: 300ms;
+  @include red-container;
+  @include small-radius;
+  position: relative;
+  width: 340px;
+  height: 340px;
+  overflow: hidden;
+  transition: 300ms;
 
-    & a {
-        @include flex-col;
-    }
+  & a {
+    @include flex-col;
+  }
 
-    & img {
-        
-        object-fit: cover;
-        width: 100%;
-        min-height: 340px;
-    }
+  & img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 340px;
+  }
 
-    & h2 {
-        position: absolute;
-        bottom: 0;
-        padding: 10px;
-        @include card-title;
-    }
+  & h2 {
+    @include text-18-500;
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+  }
 }
-
 
 /* animation */
 
 .card:hover {
-    transform: scale(1.03);
-    border: 1px solid black;
-    transition: 300ms;
-    cursor: pointer;
+  transform: scale(1.03);
+  border: 1px solid black;
+  transition: 300ms;
+  cursor: pointer;
 }

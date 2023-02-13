@@ -1,14 +1,14 @@
 .footer {
-    height: 110px;
-    background: $bg-clr-footer;
-    color: $secondary-clr;
-    @include flex-col;
-    justify-content: space-between;
-    text-align: center;
-    padding-top: 10px;
+  height: auto;
+  background: $bg-clr-footer;
+  color: $secondary-clr;
+  @include flex-col;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 65px;
 
-    &_logo {
-        width: 120px;
-        margin: auto;
-    }
+  &_logo {
+    width: 120px;
+    margin: auto;
+  }
 }

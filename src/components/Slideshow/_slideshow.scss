@@ -7,10 +7,9 @@
     position: absolute;
     z-index: 1;
     bottom: 2%;
-    right: 50%;
-    font-size: 26px;
+    right: 49%;
+    @include text-18-500;
     color: $secondary-clr;
-    font-weight: 500;
   }
 }
 
