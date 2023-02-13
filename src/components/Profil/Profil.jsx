@@ -1,12 +1,21 @@
-import React from 'react';
+// import React, { useEffect, useState } from 'react';
+import { useLoading } from '../../utils/hook/useLoading';
+import Loader from '../Loader/Loader';
 
-const Profil = ({ host }) => {
-  return (
+const Profil = ({ datas }) => {
+  const { data, isLoading } = useLoading(datas);
+
+  return !isLoading ? (
     <div className="profil__container">
-      <p>{host.name}</p>
-      <div className="profil__picture">
-        <img src={host.picture} alt={host.name} />
-      </div>
+      <p>{data.name}</p>
+      <div
+        className="profil__picture"
+        style={{ backgroundImage: `url(${data.picture})` }}
+      ></div>
+    </div>
+  ) : (
+    <div className="profil__container">
+      <Loader />
     </div>
   );
 };

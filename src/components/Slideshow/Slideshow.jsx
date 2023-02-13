@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import vector_icon from '../../assets/Images/vector_left.png';
+import { useLoading } from '../../utils/hook/useLoading';
 import Loader from '../Loader/Loader';
 
 const Slideshow = ({ datas }) => {
-  // state pour chargement
-  const [isLoading, setIsLoading] = useState(true);
-  const [slides, setSlides] = useState([]);
+  const { data, isLoading } = useLoading(datas);
+  const slides = data;
 
-  // on vérifie que les datas soit chargées avant de les stocké dans "slides"
-  useEffect(() => {
-    if (!datas) return;
-    setIsLoading(true);
-    async function getSlides() {
-      const slides = await datas;
-      setSlides(slides);
-      setIsLoading(false);
-    }
-    getSlides();
-  }, [datas]);
-
-  // state pour gerer le carrousel
   const [current, setCurrent] = useState(0);
   const lenght = slides.length;
 

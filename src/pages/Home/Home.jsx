@@ -17,7 +17,7 @@ const Home = () => {
       <Banner picture={banner_img} title={'Chez vous, partout et ailleurs'} />
       <section className="cards-container">
         {dataHousing.map((housing) => (
-          <Card key={housing.id} data={housing} />
+          <Card key={housing.id} datas={housing} />
         ))}
       </section>
     </div>
