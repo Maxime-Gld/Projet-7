@@ -1,30 +1,56 @@
 /* isOpen(true) */
 
 .dropdown {
-    width: auto;
-    @include flex-col;
+  width: auto;
+  @include flex-col;
 
-    &__btn {
-        @include small-radius;
-        @include red-container;
-        justify-content: space-between;
+  &__btn {
+    @include red-container;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px;
+    margin-block: 0.3em;
+    justify-content: space-between;
+    ::first-letter {
+      text-transform: uppercase;
+    }
+    h2 {
+      @include text-18-500;
+      margin-block: 0;
+    }
+  }
 
-        h2 {
-            font-weight: 500;
-            @include dropdown-text-size;
-        }
-    
+  &__container {
+    @include grey-container;
+    z-index: -1;
+    border-radius: 5px;
+    margin-top: -20px;
+
+    p {
+      @include text-18-400;
     }
 
-    &__container {
-        z-index: -1;
-        @include grey-container;
-        @include small-radius;
-        margin-top: -10px;
-
-        p {
-            font-weight: 400;
-            @include dropdown-text-size;
-        }
+    ul {
+      padding: 0;
     }
+
+    li {
+      list-style-type: none;
+      @include text-18-400;
+    }
+  }
+}
+
+.dropdown__btn--about {
+  @include small-radius;
+  h2 {
+    @include text-24-500;
+  }
+}
+
+.dropdown__container--about {
+  @include small-radius;
+  p {
+    @include text-24-500;
+  }
 }
