@@ -39,22 +39,31 @@ const Slideshow = ({ datas }) => {
     return null;
   }
 
+  let arrowButton;
+  if (lenght >= 2) {
+    arrowButton = (
+      <>
+        <div className="btn--arrow" onClick={nextSlide}>
+          <img
+            src={vector_icon}
+            alt="fleche pour carrousel droite"
+            className="arrow arrow--right"
+          />
+        </div>
+        <div className="btn--arrow" onClick={prevSlide}>
+          <img
+            src={vector_icon}
+            alt="fleche pour carrousel gauche"
+            className="arrow arrow--left"
+          />
+        </div>
+      </>
+    );
+  }
+
   return !isLoading ? (
     <section className="slider">
-      <div className="btn--arrow" onClick={nextSlide}>
-        <img
-          src={vector_icon}
-          alt="fleche pour carrousel droite"
-          className="arrow arrow--right"
-        />
-      </div>
-      <div className="btn--arrow" onClick={prevSlide}>
-        <img
-          src={vector_icon}
-          alt="fleche pour carrousel gauche"
-          className="arrow arrow--left"
-        />
-      </div>
+      {arrowButton}
       <div
         style={{ backgroundImage: `url(${slides[current]})` }}
         className="slide"
