@@ -1,12 +1,21 @@
 .tag {
-    width: 115px;
+  display: flex;
+  width: auto;
+
+  &__container {
+    margin-right: 10px;
+    width: auto;
     height: 25px;
     @include small-radius;
-    background-color: $primary-clr;
+    @include red-container;
+  }
 
-    &__text {
-        font-size: 14px;
-        font-weight: 500;
-        color: $secondary-clr;
-    }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 142.6%;
+    color: $secondary-clr;
+    margin: auto;
+    padding: 0 30px;
+  }
 }
