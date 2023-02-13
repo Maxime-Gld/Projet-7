@@ -1,0 +1,39 @@
+.housing {
+  &--information {
+    padding: 20px 0;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    &__container {
+      @include flex-col;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    h1 {
+      @include text-24-500;
+      font-size: 36px;
+      margin-bottom: 0;
+    }
+
+    p {
+      @include text-18-400;
+      margin-top: 0px;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__dropdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .dropdown {
+      width: 47.5%;
+    }
+  }
+}
