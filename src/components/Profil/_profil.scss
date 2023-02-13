@@ -1,5 +1,22 @@
 .profil {
   &__container {
     @include flex-center;
+    justify-content: flex-end;
+    & p {
+      width: 50%;
+      text-align: end;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 142.6%;
+      color: $primary-clr;
+      margin-right: 10px;
+    }
+  }
+  &__picture {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: cover;
   }
 }
