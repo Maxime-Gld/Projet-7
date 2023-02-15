@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import banner_img from '../../assets/Images/banner_about.jpg';
+import banner_img from '../../assets/Images/banner__about.jpg';
 import Banner from '../../components/Banner/Banner';
 import DropDownAbout from '../../components/DropDown/DropDownAbout';
 import About_data from '../../datas/About';
@@ -13,7 +13,10 @@ const About = () => {
 
   return (
     <div className="about">
-      <Banner picture={banner_img} title={''} />
+      <div className="banner-container banner-container--about">
+        <Banner picture={banner_img} title={''} />
+      </div>
+
       <section className="about-container">
         {dataAbout.map((about) => (
           <DropDownAbout

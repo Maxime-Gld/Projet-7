@@ -20,3 +20,17 @@
     background-size: cover;
   }
 }
+
+/* responsive mobile */
+
+@media only screen and (max-width: 790px) {
+  .profil {
+    &__container p {
+      font-size: 12px;
+    }
+    &__picture {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

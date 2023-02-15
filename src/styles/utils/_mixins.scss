@@ -14,11 +14,12 @@
 /* size */
 
 @mixin bloc-page {
-  margin: 30px auto;
+  margin: 15px auto;
   max-width: 1240px;
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding: 0 15px;
 }
 
 /* border radius */
@@ -65,4 +66,15 @@
   color: $primary-clr;
   padding: 25px 20px 5px 10px;
   text-align: justify;
+}
+
+/* responsive */
+
+@mixin responsiveMobile {
+  margin: 20px 0;
+  padding: 0 20px;
+  max-width: 768px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }

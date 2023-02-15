@@ -5,6 +5,15 @@
   gap: 35px;
   background-color: $bg-clr-container;
   padding: 3%;
-  margin-top: 50px;
+  margin-top: 30px;
   @include big-radius;
+}
+
+/* responsive mobile */
+
+@media only screen and (max-width: 790px) {
+  .cards-container {
+    background-color: $secondary-clr;
+    @include flex-col;
+  }
 }

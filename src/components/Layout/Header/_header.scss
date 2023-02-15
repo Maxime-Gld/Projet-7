@@ -11,6 +11,8 @@
 
   &_nav ul {
     display: flex;
+    padding: 0;
+    gap: 30px;
     justify-content: space-between;
     list-style-type: none;
   }
@@ -20,6 +22,23 @@
     margin-left: 50px;
     :hover {
       text-decoration-line: underline;
+    }
+  }
+}
+
+/* version mobile */
+
+@media only screen and (max-width: 790px) {
+  .header {
+    justify-content: space-between;
+    &_logo {
+      width: 145px;
+      height: 47px;
+    }
+    &_nav li {
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-left: 0px;
     }
   }
 }

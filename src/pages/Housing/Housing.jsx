@@ -57,7 +57,7 @@ const Housing = () => {
           <Tag datas={tags} />
         </div>
 
-        <div className="housing--information__container">
+        <div className="housing--information__container housing--profil">
           <Profil datas={host} />
           <div className="housing__rating">
             {range.map((rangeElem) =>

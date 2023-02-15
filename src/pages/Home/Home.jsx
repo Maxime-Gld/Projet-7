@@ -14,7 +14,10 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Banner picture={banner_img} title={'Chez vous, partout et ailleurs'} />
+      <div className="banner-container">
+        <Banner picture={banner_img} title={'Chez vous, partout et ailleurs'} />
+      </div>
+
       <section className="cards-container">
         {dataHousing.map((housing) => (
           <Card key={housing.id} datas={housing} />

@@ -3,3 +3,11 @@
   @include flex-col;
   gap: 30px;
 }
+
+/* responsive mobile */
+
+@media only screen and (max-width: 790px) {
+  .about-container {
+    padding: 20px 0;
+  }
+}

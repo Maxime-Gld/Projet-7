@@ -33,3 +33,16 @@
   transition: 300ms;
   cursor: pointer;
 }
+
+/* responsive mobile */
+
+@media only screen and (max-width: 790px) {
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: none;
+    & img {
+      height: auto;
+    }
+  }
+}

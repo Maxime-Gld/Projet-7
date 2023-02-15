@@ -3,6 +3,7 @@
   width: auto;
   margin: auto;
   position: relative;
+
   &__number {
     position: absolute;
     z-index: 1;
@@ -31,15 +32,34 @@
 .arrow {
   position: absolute;
   z-index: 1;
+  top: 42%;
 
   &--left {
-    top: 42%;
     left: 2%;
   }
 
   &--right {
-    top: 42%;
     right: 2%;
     rotate: 180deg;
+  }
+}
+
+/* responsive mobile */
+
+@media only screen and (max-width: 790px) {
+  .slider {
+    height: 255px;
+
+    &__number {
+      display: none;
+    }
+  }
+
+  .slide {
+    @include small-radius;
+  }
+
+  .arrow {
+    height: 20px;
   }
 }
