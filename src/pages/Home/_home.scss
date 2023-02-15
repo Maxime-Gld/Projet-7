@@ -15,5 +15,6 @@
   .cards-container {
     background-color: $secondary-clr;
     @include flex-col;
+    padding: 0;
   }
 }
