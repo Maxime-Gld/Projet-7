@@ -1,24 +1,41 @@
-.error-container {
-    @include flex-col;
-    @include bloc-page;
-    color: $primary-clr;
+.error__container {
+  @include flex-col;
+  @include bloc-page;
+  color: $primary-clr;
 
-    &_title {
-        margin: auto;
-        font-size: 200px;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
-    
-    p {
-        margin: auto;
-        margin-bottom: 120px;
-        font-size: 36px;
-    }
+  &__title {
+    margin: auto;
+    font-size: 200px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
 
-    a {
-        margin: auto;
-        text-decoration: underline;
-        margin-bottom: 30px;
+  &__text {
+    margin: auto;
+    margin-bottom: 120px;
+    @include text-18-500;
+    font-size: 36px;
+  }
+
+  .backHome {
+    margin: auto;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    @include text-18-500;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .error__container {
+    &__title {
+      font-size: 96px;
     }
+    &__text {
+      font-size: 18px;
+      text-align: center;
+    }
+    .backHome {
+      font-size: 14px;
+    }
+  }
 }
