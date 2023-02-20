@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import banner_img from '../../assets/Images/banner_kasa.jpg';
+import banner_img from '../../assets/Images/banner_home.jpg';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 
@@ -14,9 +14,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="banner-container">
-        <Banner picture={banner_img} title={'Chez vous, partout et ailleurs'} />
-      </div>
+      <Banner picture={banner_img} title={'Chez vous, partout et ailleurs'} />
 
       <section className="cards-container">
         {dataHousing.map((housing) => (
