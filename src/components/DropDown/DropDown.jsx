@@ -20,7 +20,10 @@ const DropDown = ({ title, datas }) => {
 
   return isOpen ? (
     <div className="dropdown">
-      <div className="dropdown__btn" onClick={() => SetIsOpen(false)}>
+      <div
+        className="dropdown__btn dropdown__btn--about"
+        onClick={() => SetIsOpen(false)}
+      >
         <h2>{title}</h2>
         <img
           className="dropdown__icon--revert"
@@ -28,11 +31,16 @@ const DropDown = ({ title, datas }) => {
           alt="icone fléchée"
         />
       </div>
-      <div className="dropdown__container">{dropdownText}</div>
+      <div className="dropdown__container dropdown__container--about">
+        {dropdownText}
+      </div>
     </div>
   ) : (
     <div className="dropdown">
-      <div className="dropdown__btn" onClick={() => SetIsOpen(true)}>
+      <div
+        className="dropdown__btn dropdown__btn--about"
+        onClick={() => SetIsOpen(true)}
+      >
         <h2>{title}</h2>
         <img className="dropdown__icon" src={icon} alt="icone fléchée" />
       </div>

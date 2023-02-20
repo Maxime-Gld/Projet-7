@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import banner_img from '../../assets/Images/banner__about.jpg';
 import Banner from '../../components/Banner/Banner';
-import DropDownAbout from '../../components/DropDown/DropDownAbout';
+import DropDown from '../../components/DropDown/DropDown';
 import About_data from '../../datas/About';
 
 const About = () => {
@@ -19,11 +19,7 @@ const About = () => {
 
       <section className="about-container">
         {dataAbout.map((about) => (
-          <DropDownAbout
-            key={about.title}
-            title={about.title}
-            text={about.text}
-          />
+          <DropDown key={about.title} title={about.title} datas={about.text} />
         ))}
       </section>
     </div>
