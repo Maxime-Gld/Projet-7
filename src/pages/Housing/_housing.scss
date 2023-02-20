@@ -67,6 +67,7 @@
     &__dropdown {
       display: flex;
       flex-direction: column-reverse;
+      gap: 20px;
 
       .dropdown {
         width: 100%;
