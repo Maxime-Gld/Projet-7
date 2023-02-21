@@ -77,4 +77,25 @@
       font-size: 12px;
     }
   }
+
+  .about {
+    .dropdown {
+      &__btn {
+        border-radius: 5px;
+        padding: 10px;
+      }
+      h2 {
+        font-size: 13px;
+      }
+      img {
+        height: 12px;
+      }
+      p {
+        font-size: 12px;
+      }
+      li {
+        font-size: 12px;
+      }
+    }
+  }
 }
