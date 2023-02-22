@@ -6,9 +6,16 @@
   justify-content: space-between;
   text-align: center;
   padding: 35px 0;
+  @include text-24-500;
 
   &_logo {
     width: 120px;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .footer {
+    font-size: 12px;
   }
 }
