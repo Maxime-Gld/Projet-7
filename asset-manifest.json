@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Projet-7/static/css/main.0fe63c3b.css",
-    "main.js": "/Projet-7/static/js/main.5f7a6dfd.js",
-    "static/media/banner_about_mobile.jpg": "/Projet-7/static/media/banner_about_mobile.7afd369730a7227263fd.jpg",
-    "static/media/banner_home.jpg": "/Projet-7/static/media/banner_home.b753a40cb653b706ead0.jpg",
-    "static/media/logo.svg": "/Projet-7/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
-    "static/media/logo_footer.svg": "/Projet-7/static/media/logo_footer.ee689fd9409d1b5a898b4247819d8a00.svg",
-    "index.html": "/Projet-7/index.html",
-    "main.0fe63c3b.css.map": "/Projet-7/static/css/main.0fe63c3b.css.map",
-    "main.5f7a6dfd.js.map": "/Projet-7/static/js/main.5f7a6dfd.js.map"
+    "main.css": "/kasa/static/css/main.0fe63c3b.css",
+    "main.js": "/kasa/static/js/main.2163acb7.js",
+    "static/media/banner_about_mobile.jpg": "/kasa/static/media/banner_about_mobile.7afd369730a7227263fd.jpg",
+    "static/media/banner_home.jpg": "/kasa/static/media/banner_home.b753a40cb653b706ead0.jpg",
+    "static/media/logo.svg": "/kasa/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/logo_footer.svg": "/kasa/static/media/logo_footer.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/kasa/index.html",
+    "main.0fe63c3b.css.map": "/kasa/static/css/main.0fe63c3b.css.map",
+    "main.2163acb7.js.map": "/kasa/static/js/main.2163acb7.js.map"
   },
   "entrypoints": [
     "static/css/main.0fe63c3b.css",
-    "static/js/main.5f7a6dfd.js"
+    "static/js/main.2163acb7.js"
   ]
 }
